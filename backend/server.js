@@ -1,11 +1,12 @@
 // const express = require('express');   
-
+console.log(process.env.NrODE_ENV);
 import express from 'express';
 import dotenv from "dotenv";
 import path from "path"; //configuration for uploading this project
 import { connectDB } from './config/db.js';
 
 import productRoutes from "./routes/product.routes.js";
+
 
 dotenv.config();
 const app = express();
